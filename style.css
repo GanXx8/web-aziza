@@ -21,9 +21,16 @@ body{
   color: white;
 }
 .header .jdl{
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 40%;
+}
+.header .jdl img{
+  width: 10%;
 }
 .header .jdl h2{
+  margin: 6px 5px;
   font-weight: 600;
 }
 .header .menu{
