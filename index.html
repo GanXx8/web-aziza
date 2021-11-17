@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziza | Porto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="jdl">
+        <h2>Azizatur Web Portofolio</h2>
+      </div>
+      <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <div class="list">
+              <a href="#">Home</a>
+              <a href="#">Portofolio</a>
+              <a href="#">Document</a>
+              <a href="#">Covid</a>
+              <a href="#">AboutMe</a>
+            </div>
+      </div>
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+    </header>  
+    
+    <section>
+      <div class="intro">
+        <div class="int2">
+          <img src="./assets/aziza.jpg" alt="">
+          <h1>Nur Azizatur Rokhmah</h1>
+        </div>
+        <div class="int1">
+          <h1>Hello A Bit About Me</h1>
+          <p>Grade 12 student of SMK Yapalis Krian vocational high scholl</p>
+          <div class="but">
+            <a href="" id="source-code">Source Code</a>
+            <a href="" id="covid">Data Covid</a>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+
+
+    <script>
+      //Javascript for Navigation effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+      //Javascript for responsive navigation sidebar Nav
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+    </script>
+
+  </body>
+</html>
