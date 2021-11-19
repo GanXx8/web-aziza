@@ -23,3 +23,30 @@ const getIndonesiaData = () => {
 }
 
 getIndonesiaData()
+
+// batass
+const setIndonesiaDataVaksin = (data) => {
+    const sasaran = document.getElementById('sasaran')
+    const lansia = document.getElementById('lansia')
+    const public = document.getElementById('public')
+    const vaksin1 = document.getElementById('vaksin1')
+    const vaksin2 = document.getElementById('vaksin2')
+    
+    sasaran.textContent = formatNumber(data.totalsasaran)
+    lansia.textContent = formatNumber(data.sasaranvaksinlansia)
+    public.textContent = formatNumber(data.sasaranvaksinpetugaspublik)
+    vaksin1.textContent = formatNumber(data.vaksinasi1)
+    vaksin2.textContent = formatNumber(data.vaksinasi2)
+}
+
+const getIndonesiaDataVaksin = () => {
+    try {
+        fetch('https://vaksincovid19-api.vercel.app/api/vaksin')
+            .then(res => res.json())
+            .then(json => setIndonesiaDataVaksin(json))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getIndonesiaDataVaksin()
