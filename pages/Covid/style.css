@@ -11,6 +11,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 .covid .bodycovid{
     width: 90%;
@@ -68,6 +70,7 @@ body{
 
 /* MAIN VAKSIN */
 .vaksin{
+    margin-top: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
