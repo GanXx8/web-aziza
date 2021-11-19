@@ -256,7 +256,7 @@ header .btn{
 
 /* MAIN CORONA */
 .coronaa{
-  margin-top: 2%;
+  margin-top: 5%;
   width: 100%;
   height: auto;
   display: flex;
@@ -269,7 +269,7 @@ header .btn{
   width: 85%;
 }
 .bodycorona .imgcorona{
-  width: 50%;
+  width: 40%;
   /* background-color: black; */
 }
 .bodycorona .imgcorona img{
