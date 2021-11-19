@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="textskil">
+          <span>SKILL APP
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16">
+            <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+            <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Z"/>
+            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+          </svg></span>
+          <h4>Presentase Skills Software</h4>
+        </div>
+        <div class="grapich">
+          <div class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">Photoshop</div>
+          </div>
+          <div class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">AdobeFlash</div>
+          </div>
+          <div class="card react">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">CorelDraw</div>
+          </div>
+        </div>
+        </div>
+
+
+        <script>
+            let options = {
+              startAngle: -1.55,
+              size: 150,
+              value: 0.85,
+              fill: {gradient: ['#a445b2', '#fa4299']}
+            }
+            $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+            function(event, progress, stepValue){
+              $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+            $(".js .bar").circleProgress({
+              value: 0.70
+            });
+            $(".react .bar").circleProgress({
+              value: 0.60
+            });
+          </script>
+</body>
+</html>
