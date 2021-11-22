@@ -51,6 +51,7 @@ header{
 header.sticky{
   background-color: #30c790;
   padding: 5px 100px;
+  /* color: black; */
 }
 
 header .menu{
@@ -126,45 +127,69 @@ header .btn{
       line-height: 60px;
     }
   }
+/* MAIN ABOUT */
+.mainaboutme{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 6% 0;
+  background: linear-gradient(180deg, rgba(52,211,153,1) 0%, rgba(110,231,183,1) 100%); 
+  /* align-items: center; */
+}
+.mainaboutme .bodyaboutme{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  /* align-items: center; */
+  background-color: white;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  width: 85%;
+  border-right: 10px solid crimson;
+}
+.bodyaboutme .imgaboutme{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+.bodyaboutme .imgaboutme img{
+  width: 70%;
+  /* padding: 10rem 10rem ; */
+}
+.bodyaboutme .textaboutme{
+  width: 60%;
+  padding: 3rem 1rem;
+}
 
 
 /* MAINCONTAC  */
-.maincontac {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: 5%;
-  }
-  .textcontac{
-    margin-left: 5%;
-    
-  }
-  .bodycontact{
-    margin-top: 1%;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    /* color: white; */
-  }
-  .aboutcontac{
-    width: 85%;
-    /* margin-left: 5%; */
-    border-top: 10px solid #10B981;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
-    background-color: #ECFDF5;
-    border-radius: 10px;
-  }
-  .maincontac .aboutcontac .ig a, .email a, .wa a{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 1rem;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  .maincontac .aboutcontac .ig h5, .wa h5, .email h5{
-    margin: 0 .5rem;
-  }
+.bodycontac{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bodycontac .contac{
+  width: 90%;
+}
+.contac .textcontac{
+  width: 100%;
+  border-left: 5px solid salmon;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  background-color: rgb(245, 245, 245);
+  /* background-color: blueviolet; */
+}
+.contac .imgcontac{
+  margin-top: 2%;
+  width: 100%;
+  /* background-color: brown; */
+}
+.contac .imgcontac img{
+  /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
+  width: 5%;
+}
+

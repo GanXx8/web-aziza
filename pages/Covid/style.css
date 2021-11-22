@@ -143,8 +143,6 @@ header .btn{
   /* padding: 6rem 0; */
   padding-top: 15%;
   padding-bottom: 5rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   /* align-items: center; */
   background: linear-gradient(180deg, rgba(52,211,153,1) 0%, rgba(110,231,183,1) 100%); 
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);

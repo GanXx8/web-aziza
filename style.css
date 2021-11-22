@@ -282,6 +282,7 @@ header .btn{
 
 /* MAIN VAKSIN */
 .vaksin{
+  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: center;
