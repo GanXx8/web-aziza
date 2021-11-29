@@ -14,73 +14,74 @@ body{
   color: white;
 }
 .header .jdl{
-display: flex;
-justify-content: flex-start;
-flex-direction: row;
-width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 40%;
 }
 .header .jdl img{
-width: 35px;
-height: 35px;
+  width: 35px;
+  height: 35px;
 }
 .header .jdl h4{
-margin: 6px 5px;
-font-weight: 600;
+  margin: 6px 5px;
+  font-weight: 600;
 }
 .header .menu{
-width: 40%;
+  width: 40%;
 
 }
 .header .menu .list{
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 100px;
-z-index: 999;
-transition: 0.6s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 999;
+  transition: 0.6s;
 }
 
 header.sticky{
-background-color: #30c790;
-padding: 5px 100px;
+  background-color: #30c790;
+  padding: 5px 100px;
+/* color: black; */
 }
 
 header .menu{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .menu a{
-font-size: 16px;
-font-weight: 600;
-text-decoration: none;
-color: rgb(226, 226, 226);
-margin-left: 10px;
-padding: 10px 15px;
-border-radius: 15px;
-transition: 0.3s;
-transition-property: color, background;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+  transition-property: color, background;
 }
 
 header .menu a:hover{
-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 header .btn{
-font-size: 25px;
-cursor: pointer;
-color: #fff;
-display: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -127,6 +128,22 @@ display: none;
   }
 }
 
+
+.body2{
+  margin-top: -8%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: -99;
+}
+.childbody2{
+  width: 100%;
+  height: 540px;
+  background: linear-gradient(180deg, rgba(52,211,153,1) 0%, rgba(110,231,183,1) 100%); 
+}
+
 /* MAIN MODAL */
 .modall{
   margin-top: 5%;
@@ -143,6 +160,9 @@ display: none;
   justify-content: center;
   flex-direction: column;
 }
+.bodymodal .textskil{
+  margin-bottom: 5%;
+}
 /* .textskil{
   margin-left: -5%;
 } */
@@ -150,13 +170,14 @@ display: none;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  /* margin-top: 5% */
 }
 /* .imgmodal{ */
   /* width: 20%; */
 /* } */
 /* MAIN PROGRESS */
 .wrapper{
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .wrapper, .grapich{
   width: 100%;
@@ -167,22 +188,27 @@ display: none;
 }
 .textskil{
   width: 85%;
+  height: auto;
   text-align: start;
   display: flex;
+  background-color: white;
+  border-left: 5px solid #EC4899;
+  padding: 0 1rem;
   flex-direction: column;
+  border-radius: 5px;
   /* margin-left: 5%; */
 }
 .textskil h4{
   color: black;
   font-size: 25px;
   font: bolder;
+  margin-top: -.2rem;
 }
 .grapich{
   width: 85%;
   margin-top: 1%;
   background-color: #FDF2F8;
   border-radius: 10px;
-  border-right: 10px solid #EC4899;
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 .wrapper .card{
