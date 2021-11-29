@@ -126,6 +126,34 @@ display: none;
     line-height: 60px;
   }
 }
+
+/* MAIN MODAL */
+.modall{
+  margin-top: 5%;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodymodal{
+  width: 85% !important; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* .textskil{
+  margin-left: -5%;
+} */
+.modalbagan1, .modalbagan2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+/* .imgmodal{ */
+  /* width: 20%; */
+/* } */
 /* MAIN PROGRESS */
 .wrapper{
   margin-top: 5%;
@@ -138,11 +166,11 @@ display: none;
   justify-content: center;
 }
 .textskil{
-  width: 100%;
+  width: 85%;
   text-align: start;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 .textskil h4{
   color: black;
