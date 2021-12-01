@@ -34,7 +34,7 @@
 }
 .navbar1.sticky{
   background-color: #1b1b1b !important;
-  padding: 10px 0;
+  padding: 8px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .navbar1 .content{
@@ -212,14 +212,14 @@
   }
 }
 @media (max-width: 380px) {
-  .navbar1 .logo a{
-    font-size: 27px;
+  .navbar1.sticky{
+    padding: 5px 0;
   }
-  .mainaboutme{
-    /* background-color: none; */
+  .navbar1 .logo a{
+    font-size: 20px;
   }
   .bodyaboutme{
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
