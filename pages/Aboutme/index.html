@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- ==============================HEADERR============================== -->
   <nav class="navbar1">
     <div class="content">
       <div class="logo">
@@ -33,10 +32,7 @@
       </div>
     </div>
   </nav>
-  <!-- ==============================END HEADERR============================== -->
 
-
-  <!-- ==============================MAIN ABOUT ME============================== -->
   <div class="mainaboutme">
     <div class="bodyaboutme">
       <div class="imgaboutme">
@@ -74,9 +70,7 @@
         </div>
       </div>
     </div>
-      <!-- ==============================END MAIN ABOUT ME============================== -->
 
-   <!-- ==============================FOOTER============================== -->
    <footer>
     <div class="container">
       <footer class="py-3 my-4">
@@ -91,32 +85,32 @@
       </footer>
     </div>
   </footer>
-  <!-- ==============================END FOOTER============================== -->
-    
 
-  <script>
-    const body = document.querySelector("body");
-    const navbar1 = document.querySelector(".navbar1");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar1.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar1.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar1.classList.add("sticky") : navbar1.classList.remove("sticky");
-    }
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>  
-  <script src="script.js"></script>
+    
+    <!-- ==============================SCRIPT JAVASCRIPT============================== -->
+      <script>
+        const body = document.querySelector("body");
+        const navbar1 = document.querySelector(".navbar1");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar1.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar1.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar1.classList.add("sticky") : navbar1.classList.remove("sticky");
+        }
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>  
+      <script src="script.js"></script>
 </body>
 </html>
