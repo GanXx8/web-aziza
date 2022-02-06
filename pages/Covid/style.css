@@ -33,7 +33,7 @@
   transition: all 0.3s ease;
 }
 .navbar1.sticky{
-  background-color: #1b1b1b !important;
+  background-color:#0f0f0f !important;
   padding: 8px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -54,7 +54,9 @@
   margin: 1rem 0;
   /* margin-top: 1rem; */
 }
-
+.logo img{
+  width: 10% !important;
+}
 .menu-list li{
   list-style: none;
 }
